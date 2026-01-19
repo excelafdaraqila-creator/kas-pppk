@@ -173,3 +173,10 @@ tr:hover {
     font-size: 12px;
   }
 }
+.icon {
+  font-size: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+
