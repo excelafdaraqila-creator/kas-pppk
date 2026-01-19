@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Aplikasi Kas PPPK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Aplikasi Kas PPPK</h1>
+  <p>PPPK Sukanagara</p>
+
+  <!-- KARTU DASHBOARD -->
+  <div class="cards">
+    <div class="card saldo">
+      <h3>Saldo Saat Ini</h3>
+      <p id="saldo">Rp 0</p>
+    </div>
+
+    <div class="card masuk">
+      <h3>Total Pemasukan</h3>
+      <p id="totalMasuk">Rp 0</p>
+    </div>
+
+    <div class="card keluar">
+      <h3>Total Pengeluaran</h3>
+      <p id="totalKeluar">Rp 0</p>
+    </div>
+  </div>
+
+  <!-- GRAFIK -->
+  <h2 style="text-align:center;">Grafik Kas</h2>
+  <div style="width:80%; margin:20px auto;">
+    <canvas id="grafikKas"></canvas>
+  </div>
+
+  <!-- TABEL TRANSAKSI -->
+  <h2>Riwayat Transaksi</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tanggal</th>
+        <th>Nama</th>
+        <th>Uraian</th>
+        <th>Masuk</th>
+        <th>Keluar</th>
+        <th>Saldo</th>
+      </tr>
+    </thead>
+    <tbody id="tabelKas">
+    </tbody>
+  </table>
+
+  <!-- SCRIPT (URUTAN PENTING) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="data_kas_pppk.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
