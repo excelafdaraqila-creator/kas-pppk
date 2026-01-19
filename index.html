@@ -2,18 +2,23 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <!-- WAJIB untuk mode HP -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Laporan Kas PPPK</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
- <h1 class="judul">Laporan Kas PPPK</h1>
-<p class="subjudul">PPPK Sukanagara</p>
-
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="judul">Laporan Kas PPPK</h1>
+    <p class="subjudul">PPPK Sukanagara</p>
+  </header>
 
   <!-- KARTU DASHBOARD -->
-  <div class="cards">
+  <section class="cards">
     <div class="card saldo">
       <h3>Saldo Saat Ini</h3>
       <p id="saldo">Rp 0</p>
@@ -28,38 +33,43 @@
       <h3>Total Pengeluaran</h3>
       <p id="totalKeluar">Rp 0</p>
     </div>
-  </div>
+  </section>
 
   <!-- GRAFIK -->
-  <h2 style="text-align:center;">Grafik Kas</h2>
-  <div style="width:80%; margin:20px auto;">
-    <canvas id="grafikKas"></canvas>
-  </div>
+  <section class="section">
+    <h2 class="section-title">Grafik Kas</h2>
+    <div class="grafik-container">
+      <canvas id="grafikKas"></canvas>
+    </div>
+  </section>
 
   <!-- TABEL TRANSAKSI -->
-  <h2>Riwayat Transaksi</h2>
+  <section class="section">
+    <h2 class="section-title">Riwayat Transaksi</h2>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Tanggal</th>
-        <th>Nama</th>
-        <th>Uraian</th>
-        <th>Masuk</th>
-        <th>Keluar</th>
-        <th>Saldo</th>
-      </tr>
-    </thead>
-    <tbody id="tabelKas">
-    </tbody>
-  </table>
+    <!-- wrapper supaya tabel bisa scroll di HP -->
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Tanggal</th>
+            <th>Nama</th>
+            <th>Uraian</th>
+            <th>Masuk</th>
+            <th>Keluar</th>
+            <th>Saldo</th>
+          </tr>
+        </thead>
+        <tbody id="tabelKas">
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-  <!-- SCRIPT (URUTAN PENTING) -->
+  <!-- SCRIPT (URUTAN JANGAN DIUBAH) -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="data_kas_pppk.js"></script>
   <script src="app.js"></script>
 
 </body>
 </html>
-
-
