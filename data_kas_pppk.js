@@ -342,4 +342,67 @@ const kasData = [
     masuk: 25000,
     keluar: 0
   },
+  {
+    tanggal: "20-01-2026",
+    nama: "Agus Indra",
+    uraian: "Iuran PPPK",
+    masuk: 25000,
+    keluar: 0
+  },
+  {
+    tanggal: "20-01-2026",
+    nama: "Lina Marlina",
+    uraian: "Iuran PPPK",
+    masuk: 50000,
+    keluar: 0
+  },
+  {
+    tanggal: "20-01-2026",
+    nama: "Wawan",
+    uraian: "Iuran PPPK",
+    masuk: 25000,
+    keluar: 0
+  },
+  {
+    tanggal: "20-01-2026",
+    nama: "Dedeh Kurniasih",
+    uraian: "Iuran PPPK",
+    masuk: 25000,
+    keluar: 0
+  },
+  {
+    tanggal: "20-01-2026",
+    nama: "Santi Robiyanti",
+    uraian: "Iuran PPPK",
+    masuk: 25000,
+    keluar: 0
+  },
+  {
+    tanggal: "20-01-2026",
+    nama: "Kokom",
+    uraian: "Iuran PPPK",
+    masuk: 25000,
+    keluar: 0
+  },
+  {
+    tanggal: "20-01-2026",
+    nama: "Mia Rosmiati",
+    uraian: "Iuran PPPK",
+    masuk: 25000,
+    keluar: 0
+  },
+  {
+    tanggal: "20-01-2026",
+    nama: "Asep Jubaedi",
+    uraian: "Iuran PPPK",
+    masuk: 25000,
+    keluar: 0
+  },
+  {
+    tanggal: "20-01-2026",
+    nama: "Asep Sudiana",
+    uraian: "Iuran PPPK",
+    masuk: 25000,
+    keluar: 0
+  },
 ];
