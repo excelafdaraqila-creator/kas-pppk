@@ -28,3 +28,24 @@ kasData.forEach(item => {
 saldoEl.innerText = "Rp " + saldo.toLocaleString();
 totalMasukEl.innerText = "Rp " + totalMasuk.toLocaleString();
 totalKeluarEl.innerText = "Rp " + totalKeluar.toLocaleString();
+// ===== FOOTER: TANGGAL UPDATE OTOMATIS =====
+const lastUpdateEl = document.getElementById("lastUpdate");
+
+if (lastUpdateEl) {
+  const now = new Date();
+
+  const tanggal = now.toLocaleDateString("id-ID", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric"
+  });
+
+  const jam = now.toLocaleTimeString("id-ID", {
+    hour: "2-digit",
+    minute: "2-digit"
+  });
+
+  lastUpdateEl.textContent = `${tanggal} • ${jam} WIB`;
+}
+
+
