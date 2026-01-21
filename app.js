@@ -17,7 +17,7 @@ kasData.forEach(item => {
   totalKeluar += item.keluar;
   saldo += item.masuk - item.keluar;
 
-  // tabel transaksi
+  // Tabel transaksi
   const tr = document.createElement("tr");
   tr.innerHTML = `
     <td>${item.tanggal}</td>
@@ -29,7 +29,7 @@ kasData.forEach(item => {
   `;
   tabelKas.appendChild(tr);
 
-  // rekap per anggota (hanya pemasukan)
+  // Rekap setoran per anggota (hanya pemasukan)
   if (item.masuk > 0 && item.nama !== "-") {
     if (!rekapMap[item.nama]) {
       rekapMap[item.nama] = 0;
@@ -120,6 +120,7 @@ if (lastUpdateEl) {
 const toggleBtn = document.getElementById("toggleDark");
 if (toggleBtn) {
   const saved = localStorage.getItem("darkMode");
+
   if (saved === "on") {
     document.body.classList.add("dark");
     toggleBtn.textContent = "☀️";
@@ -127,12 +128,31 @@ if (toggleBtn) {
 
   toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark");
+
     if (document.body.classList.contains("dark")) {
       localStorage.setItem("darkMode", "on");
       toggleBtn.textContent = "☀️";
     } else {
       localStorage.setItem("darkMode", "off");
       toggleBtn.textContent = "🌙";
+    }
+  });
+}
+
+// ================= TOGGLE REKAP (FIX TOTAL) =================
+const toggleRekapBtn = document.getElementById("toggleRekap");
+const rekapContainer = document.getElementById("rekapContainer");
+
+if (toggleRekapBtn && rekapContainer) {
+  toggleRekapBtn.addEventListener("click", () => {
+    const isOpen = rekapContainer.classList.contains("active");
+
+    if (isOpen) {
+      rekapContainer.classList.remove("active");
+      toggleRekapBtn.innerHTML = "🔽 Rekap Setoran Per Anggota";
+    } else {
+      rekapContainer.classList.add("active");
+      toggleRekapBtn.innerHTML = "🔼 Tutup Rekap Setoran Per Anggota";
     }
   });
 }
