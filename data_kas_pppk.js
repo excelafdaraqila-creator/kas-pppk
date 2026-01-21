@@ -1,4 +1,5 @@
 const kasData = [
+  // ===== SALDO AWAL =====
   {
     tanggal: "01-01-2026",
     nama: "-",
@@ -82,5 +83,19 @@ const kasData = [
     uraian: "Santunan meninggal orang tua Bu Rusti & Bu Irma",
     masuk: 0,
     keluar: 500000
+  },
+  {
+    tanggal: "21-01-2026",
+    nama: "Kas PPPK",
+    uraian: "Santunan meninggal orang tua Bu Tini",
+    masuk: 0,
+    keluar: 300000
+  },
+  {
+    tanggal: "21-01-2026",
+    nama: "Kas PPPK",
+    uraian: "Santunan sakit anak Pa Muslihat",
+    masuk: 0,
+    keluar: 300000
   }
 ];
