@@ -260,5 +260,10 @@ body.dark .footer {
 .rekap-container.active {
   display: block;
 }
+/* FIX: tampilkan rekap saat aktif */
+.rekap-container.active {
+  display: block;
+}
+
 
 
