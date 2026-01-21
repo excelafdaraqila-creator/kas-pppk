@@ -252,3 +252,13 @@ body.dark .footer {
     padding: 8px;
   }
 }
+/* ===== REKAP TOGGLE FIX ===== */
+.rekap-container {
+  display: none;
+}
+
+.rekap-container.active {
+  display: block;
+}
+
+
