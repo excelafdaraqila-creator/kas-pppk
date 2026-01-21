@@ -7,13 +7,17 @@ const tabelKas = document.getElementById("tabelKas");
 const saldoEl = document.getElementById("saldo");
 const totalMasukEl = document.getElementById("totalMasuk");
 const totalKeluarEl = document.getElementById("totalKeluar");
+const rekapBody = document.getElementById("rekapAnggota");
 
-// ================= PROSES DATA =================
+// ================= PROSES DATA TRANSAKSI =================
+const rekapMap = {};
+
 kasData.forEach(item => {
   totalMasuk += item.masuk;
   totalKeluar += item.keluar;
   saldo += item.masuk - item.keluar;
 
+  // tabel transaksi
   const tr = document.createElement("tr");
   tr.innerHTML = `
     <td>${item.tanggal}</td>
@@ -24,12 +28,37 @@ kasData.forEach(item => {
     <td>Rp ${saldo.toLocaleString("id-ID")}</td>
   `;
   tabelKas.appendChild(tr);
+
+  // rekap per anggota (hanya pemasukan)
+  if (item.masuk > 0 && item.nama !== "-") {
+    if (!rekapMap[item.nama]) {
+      rekapMap[item.nama] = 0;
+    }
+    rekapMap[item.nama] += item.masuk;
+  }
 });
 
 // ================= RINGKASAN =================
 saldoEl.textContent = "Rp " + saldo.toLocaleString("id-ID");
 totalMasukEl.textContent = "Rp " + totalMasuk.toLocaleString("id-ID");
 totalKeluarEl.textContent = "Rp " + totalKeluar.toLocaleString("id-ID");
+
+// ================= REKAP PER ANGGOTA =================
+if (rekapBody) {
+  const rekapArray = Object.entries(rekapMap)
+    .map(([nama, total]) => ({ nama, total }))
+    .sort((a, b) => b.total - a.total);
+
+  rekapArray.forEach((item, index) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${index + 1}</td>
+      <td>${item.nama}</td>
+      <td>Rp ${item.total.toLocaleString("id-ID")}</td>
+    `;
+    rekapBody.appendChild(tr);
+  });
+}
 
 // ================= GRAFIK =================
 const ctx = document.getElementById("grafikKas");
@@ -89,10 +118,8 @@ if (lastUpdateEl) {
 
 // ================= DARK MODE =================
 const toggleBtn = document.getElementById("toggleDark");
-
 if (toggleBtn) {
   const saved = localStorage.getItem("darkMode");
-
   if (saved === "on") {
     document.body.classList.add("dark");
     toggleBtn.textContent = "☀️";
@@ -100,7 +127,6 @@ if (toggleBtn) {
 
   toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark");
-
     if (document.body.classList.contains("dark")) {
       localStorage.setItem("darkMode", "on");
       toggleBtn.textContent = "☀️";
