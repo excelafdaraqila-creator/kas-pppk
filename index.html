@@ -2,31 +2,30 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <!-- WAJIB untuk mode HP -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Laporan Kas PPPK</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<footer class="footer">
-  Terakhir diperbarui: <span id="lastUpdate">-</span>
-</footer>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- ================= HEADER ================= -->
   <header class="header">
-  <h1 class="judul">Laporan Kas PPPK</h1>
-  <p class="subjudul">PPPK Sukanagara</p>
+    <h1 class="judul">Laporan Kas PPPK</h1>
+    <p class="subjudul">PPPK Sukanagara</p>
 
-  <!-- Tombol Dark Mode -->
-  <button id="toggleDark" class="dark-toggle">🌙</button>
-</header>
+    <!-- Dark Mode Toggle -->
+    <button id="toggleDark" class="dark-toggle">🌙</button>
+  </header>
 
-
-  <!-- KARTU DASHBOARD -->
+  <!-- ================= DASHBOARD ================= -->
   <section class="cards">
-
     <div class="card saldo">
       <h3><span class="icon">💰</span> Saldo Saat Ini</h3>
       <p id="saldo">Rp 0</p>
@@ -41,10 +40,9 @@
       <h3><span class="icon">⬇️</span> Total Pengeluaran</h3>
       <p id="totalKeluar">Rp 0</p>
     </div>
-
   </section>
 
-  <!-- GRAFIK -->
+  <!-- ================= GRAFIK ================= -->
   <section class="section">
     <h2 class="section-title">Grafik Kas</h2>
     <div class="grafik-container">
@@ -52,28 +50,10 @@
     </div>
   </section>
 
-  <!-- TABEL TRANSAKSI -->
-  <section class="section">
-  <h2 class="section-title">Rekap Setoran Per Anggota</h2>
-
-  <div class="table-wrapper">
-    <table>
-      <thead>
-        <tr>
-          <th>No</th>
-          <th>Nama</th>
-          <th>Total Setoran</th>
-        </tr>
-      </thead>
-      <tbody id="rekapAnggota"></tbody>
-    </table>
-  </div>
-</section>
-
+  <!-- ================= TABEL TRANSAKSI ================= -->
   <section class="section">
     <h2 class="section-title">Riwayat Transaksi</h2>
 
-    <!-- Wrapper supaya tabel bisa scroll di HP -->
     <div class="table-wrapper">
       <table>
         <thead>
@@ -86,20 +66,43 @@
             <th>Saldo</th>
           </tr>
         </thead>
-        <tbody id="tabelKas">
-          <!-- Data otomatis dari app.js -->
-        </tbody>
+        <tbody id="tabelKas"></tbody>
       </table>
     </div>
   </section>
 
-  <!-- SCRIPT (URUTAN JANGAN DIUBAH) -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- ================= REKAP SETORAN (TOGGLE) ================= -->
+  <section class="section">
+
+    <button id="toggleRekap" class="rekap-toggle">
+      🔽 Rekap Setoran Per Anggota
+    </button>
+
+    <div id="rekapContainer" class="rekap-container">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Total Setoran</th>
+            </tr>
+          </thead>
+          <tbody id="rekapAnggota"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    Terakhir diperbarui: <span id="lastUpdate">-</span>
+  </footer>
+
+  <!-- ================= SCRIPT ================= -->
   <script src="data_kas_pppk.js"></script>
   <script src="app.js"></script>
 
 </body>
 </html>
-
-
-
