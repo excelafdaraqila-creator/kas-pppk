@@ -9,7 +9,7 @@ const totalMasukEl = document.getElementById("totalMasuk");
 const totalKeluarEl = document.getElementById("totalKeluar");
 const rekapBody = document.getElementById("rekapAnggota");
 
-// ================= PROSES DATA TRANSAKSI =================
+// ================= PROSES DATA =================
 const rekapMap = {};
 
 kasData.forEach(item => {
@@ -17,7 +17,6 @@ kasData.forEach(item => {
   totalKeluar += item.keluar;
   saldo += item.masuk - item.keluar;
 
-  // Tabel transaksi
   const tr = document.createElement("tr");
   tr.innerHTML = `
     <td>${item.tanggal}</td>
@@ -29,12 +28,9 @@ kasData.forEach(item => {
   `;
   tabelKas.appendChild(tr);
 
-  // Rekap setoran per anggota (hanya pemasukan)
-  if (item.masuk > 0 && item.nama !== "-") {
-    if (!rekapMap[item.nama]) {
-      rekapMap[item.nama] = 0;
-    }
-    rekapMap[item.nama] += item.masuk;
+  // Rekap setoran
+  if (item.masuk > 0 && item.nama !== "-" && item.nama !== "Kas PPPK") {
+    rekapMap[item.nama] = (rekapMap[item.nama] || 0) + item.masuk;
   }
 });
 
@@ -43,116 +39,36 @@ saldoEl.textContent = "Rp " + saldo.toLocaleString("id-ID");
 totalMasukEl.textContent = "Rp " + totalMasuk.toLocaleString("id-ID");
 totalKeluarEl.textContent = "Rp " + totalKeluar.toLocaleString("id-ID");
 
-// ================= REKAP PER ANGGOTA =================
+// ================= REKAP ANGGOTA =================
 if (rekapBody) {
-  const rekapArray = Object.entries(rekapMap)
-    .map(([nama, total]) => ({ nama, total }))
-    .sort((a, b) => b.total - a.total);
-
-  rekapArray.forEach((item, index) => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${index + 1}</td>
-      <td>${item.nama}</td>
-      <td>Rp ${item.total.toLocaleString("id-ID")}</td>
-    `;
-    rekapBody.appendChild(tr);
-  });
+  Object.entries(rekapMap)
+    .sort((a, b) => b[1] - a[1])
+    .forEach(([nama, total], index) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${index + 1}</td>
+        <td>${nama}</td>
+        <td>Rp ${total.toLocaleString("id-ID")}</td>
+      `;
+      rekapBody.appendChild(tr);
+    });
 }
 
-// ================= GRAFIK =================
-const ctx = document.getElementById("grafikKas");
-
-if (ctx) {
-  new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: ["Pemasukan", "Pengeluaran"],
-      datasets: [{
-        data: [totalMasuk, totalKeluar],
-        backgroundColor: [
-          "rgba(30,144,255,0.7)",
-          "rgba(220,53,69,0.7)"
-        ],
-        borderRadius: 8
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: ctx => "Rp " + ctx.raw.toLocaleString("id-ID")
-          }
-        }
-      },
-      scales: {
-        y: {
-          beginAtZero: true,
-          ticks: {
-            callback: val => "Rp " + val.toLocaleString("id-ID")
-          }
-        }
-      }
-    }
-  });
-}
-
-// ================= FOOTER UPDATE =================
-const lastUpdateEl = document.getElementById("lastUpdate");
-if (lastUpdateEl) {
-  const now = new Date();
-  const tgl = now.toLocaleDateString("id-ID", {
-    day: "2-digit",
-    month: "long",
-    year: "numeric"
-  });
-  const jam = now.toLocaleTimeString("id-ID", {
-    hour: "2-digit",
-    minute: "2-digit"
-  });
-  lastUpdateEl.textContent = `${tgl} • ${jam} WIB`;
-}
-
-// ================= DARK MODE =================
-const toggleBtn = document.getElementById("toggleDark");
-if (toggleBtn) {
-  const saved = localStorage.getItem("darkMode");
-
-  if (saved === "on") {
-    document.body.classList.add("dark");
-    toggleBtn.textContent = "☀️";
-  }
-
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-
-    if (document.body.classList.contains("dark")) {
-      localStorage.setItem("darkMode", "on");
-      toggleBtn.textContent = "☀️";
-    } else {
-      localStorage.setItem("darkMode", "off");
-      toggleBtn.textContent = "🌙";
-    }
-  });
-}
-
-// ================= TOGGLE REKAP (FIX TOTAL) =================
+// ================= TOGGLE REKAP =================
 const toggleRekapBtn = document.getElementById("toggleRekap");
 const rekapContainer = document.getElementById("rekapContainer");
 
 if (toggleRekapBtn && rekapContainer) {
   toggleRekapBtn.addEventListener("click", () => {
-    const isOpen = rekapContainer.classList.contains("active");
-
-    if (isOpen) {
-      rekapContainer.classList.remove("active");
-      toggleRekapBtn.innerHTML = "🔽 Rekap Setoran Per Anggota";
-    } else {
-      rekapContainer.classList.add("active");
-      toggleRekapBtn.innerHTML = "🔼 Tutup Rekap Setoran Per Anggota";
-    }
+    rekapContainer.classList.toggle("active");
+    toggleRekapBtn.innerHTML = rekapContainer.classList.contains("active")
+      ? "🔼 Tutup Rekap Setoran Per Anggota"
+      : "🔽 Rekap Setoran Per Anggota";
   });
+}
+
+// ================= FOOTER =================
+const lastUpdateEl = document.getElementById("lastUpdate");
+if (lastUpdateEl) {
+  lastUpdateEl.textContent = "Data statis (manual)";
 }
