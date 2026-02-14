@@ -97,12 +97,15 @@ const kasData = [
     uraian: "Santunan sakit anak Pa Muslihat",
     masuk: 0,
     keluar: 300000
-  }
+  },
+
+  // ===== TAMBAHAN BARU =====
   {
     tanggal: "14-02-2026",
     nama: "Kas PPPK",
-    uraian: "Santunan Meninggal Suami Ibu Rika Sukarame",
+    uraian: "Santunan meninggal suami Ibu Rika Sukarame",
     masuk: 0,
     keluar: 500000
   }
+
 ];
