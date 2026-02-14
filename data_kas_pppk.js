@@ -79,6 +79,7 @@ const kasData = [
   { tanggal: "14-02-2026", nama: "Kas PPPK", uraian: "Santunan meninggal suami Ibu Rika Sukarame", masuk: 0, keluar: 500000 },
 
   // ===== TAMBAHAN PEMASUKAN =====
-  { tanggal: "14-02-2026", nama: "Tini Rahmawati", uraian: "Iuran PPPK", masuk: 50000, keluar: 0 }
+  { tanggal: "14-02-2026", nama: "Tini Rahmawati", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 }
+  { tanggal: "14-02-2026", nama: "Nina Napisah", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 }
 
 ];
