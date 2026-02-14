@@ -5,7 +5,7 @@ const kasData = [
     tanggal: "01-01-2026",
     nama: "-",
     uraian: "Saldo Awal",
-    masuk: 2425000,
+    masuk: 870000,
     keluar: 0
   },
 
@@ -46,7 +46,7 @@ const kasData = [
     keluar: 500000
   },
 
-  // ===== IURAN 14 FEBRUARI 2026 =====
+  // ===== PEMASUKAN 14 FEBRUARI 2026 =====
   { tanggal: "14-02-2026", nama: "Moch. Roni Susila", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 },
   { tanggal: "14-02-2026", nama: "Reni Susana", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 },
   { tanggal: "14-02-2026", nama: "Tini Rahmawati", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 },
@@ -98,7 +98,10 @@ const kasData = [
   { tanggal: "14-02-2026", nama: "Dedeh Kurniasih", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 },
   { tanggal: "14-02-2026", nama: "Santi Robiyanti", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 },
   { tanggal: "14-02-2026", nama: "Choirunisa", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 },
+  { tanggal: "14-02-2026", nama: "Agus Indra", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 },
+
+  // ===== TAMBAHAN TERBARU =====
   { tanggal: "14-02-2026", nama: "Siti Rohimah", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 },
-  { tanggal: "14-02-2026", nama: "Agus Indra", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 }
+  { tanggal: "14-02-2026", nama: "Ai Aisyah", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 }
 
 ];
