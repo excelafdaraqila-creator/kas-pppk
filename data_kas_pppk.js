@@ -70,42 +70,15 @@ const kasData = [
   { tanggal: "20-01-2026", nama: "Asep Sudiana", uraian: "Iuran PPPK", masuk: 25000, keluar: 0 },
 
   // ===== PENGELUARAN =====
-  {
-    tanggal: "21-01-2026",
-    nama: "Kas PPPK",
-    uraian: "Santunan meninggal istri Pa Pendi",
-    masuk: 0,
-    keluar: 500000
-  },
-  {
-    tanggal: "21-01-2026",
-    nama: "Kas PPPK",
-    uraian: "Santunan meninggal orang tua Bu Rusti & Bu Irma",
-    masuk: 0,
-    keluar: 400000
-  },
-  {
-    tanggal: "21-01-2026",
-    nama: "Kas PPPK",
-    uraian: "Santunan meninggal orang tua Bu Tini",
-    masuk: 0,
-    keluar: 300000
-  },
-  {
-    tanggal: "21-01-2026",
-    nama: "Kas PPPK",
-    uraian: "Santunan sakit anak Pa Muslihat",
-    masuk: 0,
-    keluar: 300000
-  },
+  { tanggal: "21-01-2026", nama: "Kas PPPK", uraian: "Santunan meninggal istri Pa Pendi", masuk: 0, keluar: 500000 },
+  { tanggal: "21-01-2026", nama: "Kas PPPK", uraian: "Santunan meninggal orang tua Bu Rusti & Bu Irma", masuk: 0, keluar: 400000 },
+  { tanggal: "21-01-2026", nama: "Kas PPPK", uraian: "Santunan meninggal orang tua Bu Tini", masuk: 0, keluar: 300000 },
+  { tanggal: "21-01-2026", nama: "Kas PPPK", uraian: "Santunan sakit anak Pa Muslihat", masuk: 0, keluar: 300000 },
 
   // ===== TAMBAHAN BARU =====
-  {
-    tanggal: "14-02-2026",
-    nama: "Kas PPPK",
-    uraian: "Santunan meninggal suami Ibu Rika Sukarame",
-    masuk: 0,
-    keluar: 500000
-  }
+  { tanggal: "14-02-2026", nama: "Kas PPPK", uraian: "Santunan meninggal suami Ibu Rika Sukarame", masuk: 0, keluar: 500000 },
+
+  // ===== TAMBAHAN PEMASUKAN =====
+  { tanggal: "14-02-2026", nama: "Tini Rahmawati", uraian: "Iuran PPPK", masuk: 50000, keluar: 0 }
 
 ];
