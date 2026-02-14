@@ -88,9 +88,7 @@ const kasData = [
   {tanggal:"14-02-2026",nama:"Henti",uraian:"Iuran PPPK",masuk:25000,keluar:0},
   {tanggal:"14-02-2026",nama:"Wulandari",uraian:"Iuran PPPK",masuk:25000,keluar:0},
   {tanggal:"14-02-2026",nama:"Asep Suherli",uraian:"Iuran PPPK",masuk:25000,keluar:0}
-  // TAMBAHAN TERBARU LAGI
-{tanggal:"14-02-2026",nama:"Pendi Suhendi",uraian:"Iuran PPPK",masuk:25000,keluar:0},
-{tanggal:"14-02-2026",nama:"Elis Sumiati",uraian:"Iuran PPPK",masuk:25000,keluar:0}
+  
 
 
 ];
