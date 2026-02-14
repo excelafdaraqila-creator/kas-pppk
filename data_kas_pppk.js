@@ -98,4 +98,11 @@ const kasData = [
     masuk: 0,
     keluar: 300000
   }
+  {
+    tanggal: "14-02-2026",
+    nama: "Kas PPPK",
+    uraian: "Santunan Meninggal Suami Ibu Rika Sukarame",
+    masuk: 0,
+    keluar: 500000
+  }
 ];
