@@ -17,7 +17,6 @@ const kasData = [
   { tanggal:"14-02-2026", nama:"Kas PPPK", uraian:"Santunan meninggal suami Ibu Rika Sukarame", masuk:0, keluar:500000 },
 
   // ===== PEMASUKAN 14 FEBRUARI 2026 =====
-
   {tanggal:"14-02-2026",nama:"Moch. Roni Susila",uraian:"Iuran PPPK",masuk:25000,keluar:0},
   {tanggal:"14-02-2026",nama:"Reni Susana",uraian:"Iuran PPPK",masuk:25000,keluar:0},
   {tanggal:"14-02-2026",nama:"Tini Rahmawati",uraian:"Iuran PPPK",masuk:25000,keluar:0},
@@ -94,6 +93,9 @@ const kasData = [
   // ===== PEMASUKAN 15 FEBRUARI 2026 =====
   {tanggal:"15-02-2026",nama:"Lina Marlina",uraian:"Iuran PPPK",masuk:50000,keluar:0},
   {tanggal:"15-02-2026",nama:"Wildan Ramdani",uraian:"Iuran PPPK",masuk:25000,keluar:0},
-  {tanggal:"15-02-2026",nama:"Erlan Suherlan",uraian:"Iuran PPPK",masuk:25000,keluar:0}
+  {tanggal:"15-02-2026",nama:"Erlan Suherlan",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+
+  // ===== PENGELUARAN 08 MARET 2026 =====
+  {tanggal:"08-03-2026",nama:"Kas PPPK",uraian:"Santunan meninggal Ibu dari Reni Susana",masuk:0,keluar:400000}
 
 ];
