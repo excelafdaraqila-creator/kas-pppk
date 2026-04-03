@@ -69,6 +69,26 @@ const kasData = [
   {tanggal:"14-02-2026",nama:"Santi Robiyanti",uraian:"Iuran PPPK",masuk:25000,keluar:0},
   {tanggal:"14-02-2026",nama:"Choirunisa",uraian:"Iuran PPPK",masuk:25000,keluar:0},
   {tanggal:"14-02-2026",nama:"Agus Indra",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Siti Rohimah",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Ai Aisyah",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Eli Suminar",uraian:"Iuran PPPK",masuk:50000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Mira Nurdawanti",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Ani Krisnawati",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Yanwar Adiyanti U",uraian:"Iuran PPPK",masuk:30000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Alamsayah",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Rosi Rosaria I",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Sri Ernawati",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Miftah Wardiana",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Andhika Gumilar",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Nana Holiana",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Siti Saadah",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Wawat",uraian:"Iuran PPPK",masuk:50000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Sri Nia Rahayu",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Henti",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Wulandari",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Asep Suherli",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Pendi Suhendi",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+  {tanggal:"14-02-2026",nama:"Elis Sumiati",uraian:"Iuran PPPK",masuk:25000,keluar:0},
 
   // ===== PEMASUKAN 15 FEBRUARI 2026 =====
   {tanggal:"15-02-2026",nama:"Lina Marlina",uraian:"Iuran PPPK",masuk:50000,keluar:0},
@@ -76,9 +96,6 @@ const kasData = [
   {tanggal:"15-02-2026",nama:"Erlan Suherlan",uraian:"Iuran PPPK",masuk:25000,keluar:0},
 
   // ===== PENGELUARAN 08 MARET 2026 =====
-  {tanggal:"08-03-2026",nama:"Kas PPPK",uraian:"Santunan meninggal Ibu dari Reni Susana",masuk:0,keluar:400000},
-
-  // ===== PEMASUKAN 03 APRIL 2026 =====
-  {tanggal:"03-04-2026",nama:"Liska",uraian:"Iuran PPPK",masuk:25000,keluar:0}
+  {tanggal:"08-03-2026",nama:"Kas PPPK",uraian:"Santunan meninggal Ibu dari Reni Susana",masuk:0,keluar:400000}
 
 ];
