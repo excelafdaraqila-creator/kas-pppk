@@ -105,9 +105,11 @@ const kasData = [
   {tanggal:"01-06-2026",nama:"Kas PPPK",uraian:"Santunan meninggal orang tua Ibu Anis SDN Neglasari",masuk:0,keluar:400000},
 
   // ===== PEMASUKAN 15 JUNI 2026 =====
-  {tanggal:"15-06-2026",nama:"Nina Napisah",uraian:"Iuran PPPK",masuk:25000,keluar:0},
-  {tanggal:"15-06-2026",nama:"Tini Rahmawati",uraian:"Iuran PPPK",masuk:25000,keluar:0}
-  // ===== PEMASUKAN 16 JUNI 2026 =====
-  {tanggal:"16-06-2026",nama:"Roni Susila",uraian:"Iuran PPPK",masuk:25000,keluar:0},
-  {tanggal:"16-06-2026",nama:"Reni Susana",uraian:"Iuran PPPK",masuk:25000,keluar:0}
+{tanggal:"15-06-2026",nama:"Nina Napisah",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+{tanggal:"15-06-2026",nama:"Tini Rahmawati",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+
+// ===== PEMASUKAN 16 JUNI 2026 =====
+{tanggal:"16-06-2026",nama:"Roni Susila",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+{tanggal:"16-06-2026",nama:"Reni Susana",uraian:"Iuran PPPK",masuk:25000,keluar:0}
+
 ];
