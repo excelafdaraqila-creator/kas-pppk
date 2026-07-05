@@ -110,8 +110,9 @@ const kasData = [
 
 // ===== PEMASUKAN 16 JUNI 2026 =====
 {tanggal:"16-06-2026",nama:"Roni Susila",uraian:"Iuran PPPK",masuk:25000,keluar:0},
-{tanggal:"16-06-2026",nama:"Reni Susana",uraian:"Iuran PPPK",masuk:25000,keluar:0}
-  
+{tanggal:"16-06-2026",nama:"Reni Susana",uraian:"Iuran PPPK",masuk:25000,keluar:0},
+
 // ===== PENGELUARAN 05 JULI 2026 =====
 {tanggal:"05-07-2026",nama:"Kas PPPK",uraian:"Santunan meninggal Suami Bu Nana Holiana",masuk:0,keluar:500000}
+
 ];
