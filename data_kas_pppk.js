@@ -118,4 +118,8 @@ const kasData = [
 // ===== PENGELUARAN 06 JULI 2026 =====
 {tanggal:"06-07-2026",nama:"Kas PPPK",uraian:"Santunan meninggal Bapak dari Wahid Inayatuloh",masuk:0,keluar:400000}
 
+  // ===== PEMASUKAN 08 JULI 2026 =====
+{tanggal:"08-07-2026",nama:"Rika Mayasari",uraian:"Iuran PPPK",masuk:50000,keluar:0}
+
 ];
+
