@@ -120,6 +120,8 @@ const kasData = [
 
 // ===== PEMASUKAN 08 JULI 2026 =====
 {tanggal:"08-07-2026",nama:"Rika Mayasari",uraian:"Iuran PPPK",masuk:50000,keluar:0}
-
+  
+// ===== PENGELUARAN 14 NOVEMBER 2026 =====
+{tanggal:"14-11-2026",nama:"Kas PPPK",uraian:"Santunan meninggal orang tua Pa Erlan Suherlan",masuk:0,keluar:400000}
 ];
 
