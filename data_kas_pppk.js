@@ -121,7 +121,13 @@ const kasData = [
 // ===== PEMASUKAN 08 JULI 2026 =====
 {tanggal:"08-07-2026",nama:"Rika Mayasari",uraian:"Iuran PPPK",masuk:50000,keluar:0},
 
+// ===== PEMASUKAN 14 SEPTEMBER 2026 =====
+{tanggal:"14-09-2026",nama:"Miftah Wardiana",uraian:"Iuran PPPK",masuk:100000,keluar:0},
+
 // ===== PENGELUARAN 14 NOVEMBER 2026 =====
-{tanggal:"14-11-2026",nama:"Kas PPPK",uraian:"Santunan meninggal orang tua Pa Erlan Suherlan",masuk:0,keluar:400000}
+{tanggal:"14-11-2026",nama:"Kas PPPK",uraian:"Santunan meninggal orang tua Pa Erlan Suherlan",masuk:0,keluar:400000},
+
+// ===== PEMASUKAN 15 NOVEMBER 2026 =====
+{tanggal:"15-11-2026",nama:"Cacih Suciati",uraian:"Iuran PPPK",masuk:50000,keluar:0}
 ];
 
