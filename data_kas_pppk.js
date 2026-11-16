@@ -128,6 +128,9 @@ const kasData = [
 {tanggal:"14-11-2026",nama:"Kas PPPK",uraian:"Santunan meninggal orang tua Pa Erlan Suherlan",masuk:0,keluar:400000},
 
 // ===== PEMASUKAN 15 NOVEMBER 2026 =====
-{tanggal:"15-11-2026",nama:"Cacih Suciati",uraian:"Iuran PPPK",masuk:50000,keluar:0}
+{tanggal:"15-11-2026",nama:"Cacih Suciati",uraian:"Iuran PPPK",masuk:50000,keluar:0},
+
+// ===== PEMASUKAN 16 NOVEMBER 2026 =====
+{tanggal:"16-11-2026",nama:"Wawat Sopiah Hermawa",uraian:"Iuran PPPK",masuk:120000,keluar:0}
 ];
 
