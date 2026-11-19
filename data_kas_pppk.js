@@ -131,6 +131,8 @@ const kasData = [
 {tanggal:"15-11-2026",nama:"Cacih Suciati",uraian:"Iuran PPPK",masuk:50000,keluar:0},
 
 // ===== PEMASUKAN 16 NOVEMBER 2026 =====
-{tanggal:"16-11-2026",nama:"Wawat Sopiah Hermawa",uraian:"Iuran PPPK",masuk:120000,keluar:0}
-];
+{tanggal:"16-11-2026",nama:"Wawat Sopiah Hermawa",uraian:"Iuran PPPK",masuk:120000,keluar:0},
 
+// ===== PEMASUKAN 19 NOVEMBER 2026 =====
+{tanggal:"19-11-2026",nama:"Roni",uraian:"Masuk dari Kas Pa Roni Pergantian santunan meninggal orang tua Pa Erlan Suherlan",masuk:400000,keluar:0}
+];
